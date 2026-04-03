@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my cv</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background: #f9fbff;
+    }
+
+    .sidebar {
+      width: 260px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: white;
+      color: #111;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .sidebar img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .sidebar h2{
+        color: #2563eb;
+    }
+    .sidebar p{
+        font-size: 20px;
+        color: black;
+        margin: 5px 0;
+    }
+
+    .blue-line {
+      width: 60px;
+      height: 4px;
+      background: #2563eb;
+      margin: 10px auto 15px;
+      border-radius: 2px;
+    }
+
+    .profile-desc {
+      font-size: 14px;
+      color: #555355;
+      margin-top: 10px;
+    }
+
+    .content {
+      margin-left: 280px;
+      padding: 30px;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+    
+    #kontakt {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      width: 100%;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+    #kontakt h3 {
+      color: #2563eb;
+    }
+    #kontakt a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    #kontakt a:hover {
+      text-decoration: underline;
+    }
+    #kontakt p {
+      font-size: 14px;
+      color: #555355;
+      margin: 10px 0;
+    }
+    #kontakt img {
+      width: 30px;
+      height: 30px;
+    }
+
+
+
+
+    #aboutme {
+      background-image: url('19bk.jpg.jpg'); 
+      background-size: cover;      
+      background-position: center; 
+      color: white;
+      position: relative;
+      border-radius: 12px;
+      padding: 40px 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    #aboutme::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      z-index: 0;
+    }
+
+    #aboutme h3{
+        position: relative;
+        z-index: 1; 
+        font-size: 25px;
+        color:whitesmoke;
+    }
+    #aboutme p {
+      position: relative;
+      z-index: 1; 
+      font-size: 18px;
+      color: whitesmoke;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .service:hover { transform: translateY(-5px); }
+
+    .service img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .service-content { padding: 15px; }
+
+    .form-group { margin-bottom: 15px; }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background: #2563eb;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover { background: #1d4ed8; }
+
+    .contact-icon { vertical-align: middle; margin-right: 8px; }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <img src="myimg.jpg.jpeg" alt="my profile picture">
+  <div class="blue-line"></div>
+  <h2>Sherif Mohamed</h2>
+  <p>Webentwickler</p>
+  <div class="profile-desc">
+    Ich entwickle professionelle Webseiten mit modernen Designs, interaktiven Funktionen und leistungsstarken Statistik-Systemen für Unternehmen und Projekte.
+  </div>
+
+<div id="kontakt">
+  <div class="section" style="margin-top:5px; margin-bottom: 20px; height:100vh;width:190px;">
+  <h3>Direkter Kontakt</h3>
+
+  <p>
+    <img src="phone.png" alt="" class="contact-icon">
+    <a href="tel:+49123456789">+49 123 456789</a>
+  </p>
+
+  <p>
+    <img src="gmail.png" alt="" class="contact-icon">
+    <a href="mailto:u43635921@gmail.com">u43635921@gmail.com</a>
+  </p>
+
+  <p>
+    <img src="facebook.png" alt="" class="contact-icon">
+    <a href="https://facebook.com" target="_blank">facebook.com</a>
+  </p>
+
+  <p>
+    <img src="inste.jpg" alt="" class="contact-icon">
+    <a href="https://instagram.com" target="_blank">instagram.com</a>
+  </p>
+
+  <p>
+    <img src="linkend.png" alt="" class="contact-icon">
+    <a href="https://linkedin.com" target="_blank">linkedin.com</a>
+  </p>
+
+</div>
+</div>
+</div>
+
+<div class="content">
+  <div class="section" id="aboutme">
+    <h3>Über mich</h3>
+    <p>Ich entwickle moderne und maßgeschneiderte Webseiten, die nicht nur optisch überzeugen, sondern auch durch interaktive Funktionen, dynamische Inhalte und leistungsstarke Statistiklösungen den Erfolg Ihres Projekts steigern. Mein Ziel ist es, Design und Technik perfekt zu verbinden, damit Ihre Webseite sowohl funktional als auch beeindruckend ist.</p>
+  </div>
+
+  <div class="section">
+    <h3>Meine Services</h3>
+    <div class="services">
+      <div class="service">
+        <img src="website.png">
+        <div class="service-content">
+          <h4>Webseiten</h4>
+          <p>Ich erstelle moderne Webseiten. Eine moderne Webseite bietet ein ansprechendes Design, benutzerfreundliche Navigation und responsive Funktionen, damit Besucher auf allen Geräten ein optimales Erlebnis haben.</p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="Static.png">
+        <div class="service-content">
+          <h4>Statistik</h4>
+          <p>Ich baue Statistik Systeme. Eine Statistik-Website präsentiert Daten anschaulich in Diagrammen, Grafiken und Tabellen, damit Informationen schnell verstanden und ausgewertet werden können.</p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="dynamic.png">
+        <div class="service-content">
+          <h4>Dynamik</h4>
+          <p>Interaktive Webseiten mit JavaScript. Eine dynamische Website passt sich den Nutzerinteraktionen an, zeigt aktuelle Inhalte in Echtzeit und bietet interaktive Funktionen für ein individuelles Erlebnis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <form action="https://api.web3forms.com/submit" method="POST">
+   <input type="hidden" name="access_key" value="9de15d07-7fe5-4220-9458-078f28d69ea3">
+  <input type="hidden" name="subject" value="Neue Nachricht von deiner Website">
+
+  <input type="checkbox" name="botcheck" style="display:none;">
+
+  <h3>Kontaktformular</h3>
+
+  <div class="form-group">
+    <input type="text" name="vorname" placeholder="Vorname">
+  </div>
+
+  <div class="form-group">
+    <input type="text" name="nachname" placeholder="Nachname">
+  </div>
+
+  <div class="form-group">
+    <input type="text" name="firma" placeholder="Firma">
+  </div>
+
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Email" required>
+  </div>
+
+  <div class="form-group">
+    <textarea name="message" rows="5" placeholder="Dein Anliegen..." required></textarea>
+  </div>
+
+  <button type="submit">Nachricht senden</button>
+</form>
+    
+  </div>
+</div>
+
+<script>
+const form = document.querySelector("form");
+
+form.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: data
+  });
+
+  const result = await response.json();
+
+  if (result.success) {
+    alert("✅ Nachricht gesendet!");
+    form.reset();
+  } else {
+    alert("Fehler beim Senden");
+  }
+}); 
+</script>
+
+</body>
+</html>
