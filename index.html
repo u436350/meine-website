@@ -181,6 +181,64 @@
     button:hover { background: #1d4ed8; }
 
     .contact-icon { vertical-align: middle; margin-right: 8px; }
+    img {
+  max-width: 100%;
+  height: auto;
+}
+/* 📱 MOBILE VERSION */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  #kontakt .section {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .service img {
+    height: 180px;
+  }
+
+  input, textarea {
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #aboutme {
+    padding: 25px 15px;
+  }
+
+  #aboutme h3 {
+    font-size: 20px;
+  }
+
+  #aboutme p {
+    font-size: 16px;
+  }
+
+}
+
   </style>
 </head>
 <body>
@@ -233,7 +291,7 @@
     <p>Ich entwickle moderne und maßgeschneiderte Webseiten, die nicht nur optisch überzeugen, sondern auch durch interaktive Funktionen, dynamische Inhalte und leistungsstarke Statistiklösungen den Erfolg Ihres Projekts steigern. Mein Ziel ist es, Design und Technik perfekt zu verbinden, damit Ihre Webseite sowohl funktional als auch beeindruckend ist.</p>
   </div>
 
-  <div class="section">
+  <div class="section" style="margin-top:5px; margin-bottom: 20px;">
     <h3>Meine Services</h3>
     <div class="services">
       <div class="service">
